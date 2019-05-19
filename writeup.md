@@ -85,7 +85,7 @@ The model was trained and validated on different data sets to ensure that the mo
 
 #### 3. Model parameter tuning
 
-The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 114).
+The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 114). I also tried different values of EPOCHS, DROPOUTS and BATCH_SIZE. In the end, I am using 5 EPOCHS, BATCH_SIZE of 32 and 1 DROPOUT of 0.5 where as other 2 of 0.25, also shown in the architecure
 
 #### 4. Appropriate training data
 
