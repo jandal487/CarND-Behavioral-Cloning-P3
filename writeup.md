@@ -64,22 +64,22 @@ So, the model.py file shows the pipeline I used for training and validating the 
 
 The architecture of CNN is based on [Nvidia's paper](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf). * The architecture used by Nvidia is as below:
 
-<img src="./images/NVIDIA.JPG">
+<img src="./nvidia.png">
 
 
 My architecture is similar but with some changes that are mentioned below:
 * Nvidia's architectur uses input shape of 66x200x3 but I have 160x320x3
-* I crop the images and then the input shape becomes 60x320x3
-* remove first fully connected layer with 1164 neurons
-* add a dropout layer to avoid overfitting
-* use elu instead of relu as activate function of covolution layer
+* I crop the images and then the dimension becomes 60x320x3
+* I drop 5th convolutional layer and add a drop out layer to aviod over-fitting
+* I used ELU as activation function
+* I used drop outs also after first and 3rd Dense layers
 
 The training uses mean squared error as cost function and Adam optimizer with 0.001 learning rate,
-10% data as validation data, 5 epochs and batch size of 32.
+20% data as validation data, 5 epochs and batch size of 32.
 
 #### 2. Attempts to reduce overfitting in the model
 
-The model contains dropout layers in order to reduce overfitting (model.py lines 21). 
+The model contains dropout layers in order to reduce overfitting (model.py lines 127, 132, & 139). 
 
 The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 10-16). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
