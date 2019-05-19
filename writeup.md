@@ -77,10 +77,6 @@ My architecture is similar but with some changes that are mentioned below:
 The training uses mean squared error as cost function and Adam optimizer with 0.001 learning rate,
 20% data as validation data, 5 epochs and batch size of 32.
 
-The architecture is as below:
-
-<img src="./architecture.png">
-
 #### 2. Attempts to reduce overfitting in the model
 
 The model contains dropout layers in order to reduce overfitting (model.py lines 127, 132, & 139). 
@@ -115,11 +111,10 @@ At the end of the process, the vehicle is able to drive autonomously around the 
 
 #### 2. Final Model Architecture
 
-The final model architecture (model.py lines 18-24) consisted of a convolution neural network with the following layers and layer sizes ...
+The final model architecture (model.py lines 118-144) consisted of a convolution neural network with the following layers and layer sizes:
 
-Here is a visualization of the architecture (note: visualizing the architecture is optional according to the project rubric)
+<img src="./architecture.png">
 
-![alt text][image1]
 
 #### 3. Creation of the Training Set & Training Process
 
