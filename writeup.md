@@ -64,7 +64,7 @@ So, the model.py file shows the pipeline I used for training and validating the 
 
 The architecture of CNN is based on [Nvidia's paper](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf). * The architecture used by Nvidia is as below:
 
-<img src="./images/NVIDIA.JPG">
+<img src="./NVIDIA.JPG">
 
 
 My architecture is similar but with some changes that are mentioned below:
