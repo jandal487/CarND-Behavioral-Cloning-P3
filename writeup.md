@@ -62,9 +62,16 @@ So, the model.py file shows the pipeline I used for training and validating the 
 
 #### 1. An appropriate model architecture has been employed
 
-My model consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
+The architecture of CNN is based on [Nvidia's paper](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf) 
+but with some changes that are mentioned below:
+* Nvidia's architectur uses input shape of 66x200x3 but I have 160x320x3
+* I crop the images and then the input shape becomes 60x320x3
+* remove first fully connected layer with 1164 neurons
+* add a dropout layer to avoid overfitting
+* use elu instead of relu as activate function of covolution layer
 
-The model includes RELU layers to introduce nonlinearity (code line 20), and the data is normalized in the model using a Keras lambda layer (code line 18). 
+The training uses mean squared error as cost function and Adam optimizer with 0.001 learning rate,
+10% data as validation data, 5 epochs and batch size of 32.
 
 #### 2. Attempts to reduce overfitting in the model
 
