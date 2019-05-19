@@ -30,6 +30,7 @@ The goals / steps of this project are the following:
 #### 1. Submission includes all required files and can be used to run the simulator in autonomous mode
 
 My project includes the following files:
+
 |  Filename   |   Description  | 
 |:-------------:|:-------------:|
 | prepare_data.ipynb |  ipython notebook for data preprocessing and argumentation |
