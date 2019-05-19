@@ -62,8 +62,12 @@ So, the model.py file shows the pipeline I used for training and validating the 
 
 #### 1. An appropriate model architecture has been employed
 
-The architecture of CNN is based on [Nvidia's paper](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf) 
-but with some changes that are mentioned below:
+The architecture of CNN is based on [Nvidia's paper](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf). * The architecture used by Nvidia is as below:
+
+<img src="./images/NVIDIA.JPG">
+
+
+My architecture is similar but with some changes that are mentioned below:
 * Nvidia's architectur uses input shape of 66x200x3 but I have 160x320x3
 * I crop the images and then the input shape becomes 60x320x3
 * remove first fully connected layer with 1164 neurons
