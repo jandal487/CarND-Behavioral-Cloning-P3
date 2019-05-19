@@ -30,10 +30,13 @@ The goals / steps of this project are the following:
 #### 1. Submission includes all required files and can be used to run the simulator in autonomous mode
 
 My project includes the following files:
-* model.py containing the script to create and train the model
-* drive.py for driving the car in autonomous mode
-* model.h5 containing a trained convolution neural network 
-* writeup_report.md or writeup_report.pdf summarizing the results
+|  Filename   |   Description  | 
+|:-------------:|:-------------:|
+| prepare_data.ipynb |  ipython notebook for data preprocessing and argumentation |
+| model.py | define and train the neural network |
+| model.h5 | saved model by keras |
+| drive.py | communicate with simulator and use saved model to predict steering angle  |
+| run1.mp4 | track 1 video record |
 
 #### 2. Submission includes functional code
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
