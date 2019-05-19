@@ -47,7 +47,16 @@ python drive.py model.h5
 
 #### 3. Submission code is usable and readable
 
-The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
+The model.py file contains the following tasks:
+* load_driving_log() is the function to load 'driving_log.csv' file 
+* load_dataset(): is to load images and steering angles.
+* load_aug_dataset(): Augmentation of images is done in this function.
+* I also write results to pickle files so that I can load them for later use
+* First of all, I implemented a LeNet-5 architecture to train quickly and see end to end results on simulator
+* Then I implemented Nvidia's architecture with minor changes, as discussed in the class.
+* I am not using generator() here but I still have the code in model_generator.py. As the size of the data was not huge so working with out generator() function was sufficient for this project.
+
+So, the model.py file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
 ### Model Architecture and Training Strategy
 
