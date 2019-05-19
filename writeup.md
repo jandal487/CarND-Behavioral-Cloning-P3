@@ -37,6 +37,7 @@ My project includes the following files:
 | model.h5 | saved model by keras |
 | drive.py | communicate with simulator and use saved model to predict steering angle  |
 | run1.mp4 | track 1 video record |
+| writeup.md | This is the report file of the project |
 
 #### 2. Submission includes functional code
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
