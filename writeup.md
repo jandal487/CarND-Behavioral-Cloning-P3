@@ -33,8 +33,7 @@ My project includes the following files:
 
 |  Filename   |   Description  | 
 |:-------------:|:-------------:|
-| prepare_data.ipynb |  ipython notebook for data preprocessing and argumentation |
-| model.py | define and train the neural network |
+| model.py | contains data generation, define and train a neural network regression model |
 | model.h5 | saved model by keras |
 | drive.py | communicate with simulator and use saved model to predict steering angle  |
 | run1.mp4 | track 1 video record |
